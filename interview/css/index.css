@@ -1,0 +1,30 @@
+body{
+    min-width: 1200px;
+    background-color: #f4f4f4;
+}
+.wrap{
+    width: 1200px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+header{
+    padding: 5px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+ol li{
+    padding: 10px 0;
+}
+
+.qTitle{
+    font-weight: bold;
+}
