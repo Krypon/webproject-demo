@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div>
+		rugular expression
+		作用：匹配字符串
+		
+		MDN 找东西
+		
+		</div>
+		
+		<script type="text/javascript">
+		//1，创建一个正则
+		//1）字面量的形式
+			var reg=/abc/;
+			//2）构造函数形式
+			var reg1=new RegExp("abc");
+			
+			//2.编写pattern
+			var newReg=/^ae$/;
+			var newReg1=new RegExp("^ao*e$");
+			var newStr="apple and pear and wood";
+			//*是0或多个，有没有都行
+			//+是起码一个
+			//？是0次或一次
+			var reg2=/a+/; //起码匹配一个a
+			var reg3=/b?/; //匹配0个或者一个b，要么没有，要么有一个；
+			
+		</script>
+	</body>
+</html>

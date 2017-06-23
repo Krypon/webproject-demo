@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>后台管理系统</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootsstyle.css" />
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+	</head>
+
+	<body>
+		<div class="wrap">
+		<div class="navbar navbar-default" role="navigation">
+			<div class="navbar-inner">
+				<button type="button" class="navbar-toggle pull-left animated filp">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<span>薪乐宝|后台管理</span>
+				</a>
+				<div class="btn-group pull-right">
+					<a class="btn dropdown-toggle" data-toggle="dropdown">
+						<span class="hidden-sm hidden-xs">欢迎您！X先生</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">个人中心</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="#">账户信息</a>
+						</li>
+					</ul>
+					<a href="#" class="btn hidden-sm hidden-xs">退出</a>
+				</div>
+				<ul class="collapse navbar-collapse nav navbar-nav top-menu">
+					<li>
+						<a href="#">客服中心</a>
+					</li>
+					<li>
+						<a href="#">系统管理</a>
+					</li>
+					<li>
+						<a href="#">统计结算</a>
+					</li>
+					<li>
+						<a href="#">运营中心</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2 col-lg-2">
+					<!--sidebar-->
+					<div class="sidebar-nav">
+						<ul class="nav nav-pills nav-stacked main-menu">
+							<li class="add active">
+								<a href="#">
+									<i class="glyphicon glyphicon-envelope"></i>
+									<span>用户信息</span>
+								</a>
+								<ul class="nav nav-pills nav-stacked" style="display: block;">
+									<li>
+										<a href="#">用户信息</a>
+									</li>
+									<li>
+										<a href="#">银行卡信息</a>
+									</li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">
+									<i class="glyphicon glyphicon-calendar"></i>
+									<span>账本信息</span>
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">
+									<i class="glyphicon glyphicon-thumbs-up"></i>
+									<span>客服保障</span>
+								</a>
+							</li>
+							<li class="divider"></li>
+						</ul>
+					</div>
+				</div>
+
+				<!--用户信息详情页-->
+				<div id="content" class="col-lg-10 col-sm-10">
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">客服中心</a>
+						</li>
+						<li>
+							<a href="#">用户信息</a>
+						</li>
+					</ul>
+					<form class="form-inline">
+						<div class="form-group">
+							<label for="idcard">身份证</label>
+							<input type="text" class="form-control" id="idcard" />
+						</div>
+						<div class="form-group">
+							<label for="tel">手机号码</label>
+							<input type="tel" class="form-control" id="tel" />
+						</div>
+						<div class="form-group">
+							<label for="name">姓名</label>
+							<input type="text" class="form-control" id="name" />
+						</div>
+						<button type="submit" class="btn btn-default btn-success">查询</button>
+						<button type="submit" class="btn btn-default btn-warning">重置</button>
+					</form>
+					<!--用户信息表格-->
+
+					<div class="page-table">
+						<table class="table table-bordered">
+							<thead>
+								<tr class="success">
+									<th colspan="3">用户信息</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>客户姓名:</th>
+									<th>客户ID:</th>
+									<th>所属企业:</th>
+								</tr>
+								<tr>
+									<th>注册手机:</th>
+									<th>注册邮箱:</th>
+									<th>创建时间:</th>
+								</tr>
+								<tr>
+									<th>总资产(元):</th>
+									<th></th>
+									<th></th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="page-table page-table1">
+						<table class="table table-bordered">
+							<thead>
+								<tr class="warning">
+									<th colspan="2">资产详情</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>工资宝资金:</th>
+									<th>当前
+										<a href="#">银行卡</a>:</th>
+								</tr>
+								<tr>
+									<th>已确认资金:</th>
+									<th>未确认购买资金:</th>
+								</tr>
+								<tr>
+									<th>累计收益:</th>
+									<th>未确认赎回资金:</th>
+								</tr>
+								<tr>
+									<th>
+										<a href="#">点击查看交易流水</a>:</th>
+									<th></th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="panel-footer">
+				深圳中兴网信科技有限公司 版权所有Copyright&copy; &nbsp;2013-2015
+			</div>
+
+		</div>
+		</div>
+
+	</body>
+
+</html>

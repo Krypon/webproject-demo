@@ -1,0 +1,148 @@
+.wrap{
+	min-height: 1000px;
+	width: 100%;
+	background: #28a1e7;
+}
+
+.navbar-default {
+    background-color: #2fa4e7;
+    border-color: #1995dc;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+
+.navbar-inner{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	line-height: 30px;
+	height: 60px;
+	background: #3986ac;
+}
+
+.animated.flip {
+    -webkit-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-animation-name: flip;
+    animation-name: flip;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #178acc;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+a{
+	color: #fff;
+}
+
+.add>ul{
+	margin-left: 10px;
+}
+
+ul.main-menu li:not(.nav-header) {
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.container-fluid{
+	background: #28a1e7;
+}
+
+/*sidebar*/
+.sidebar-nav {
+    min-height: 0;
+    /*box-shadow: 0 0 10px #BDBDBD;*/
+    border-radius: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    max-height: none;
+    background: #28a1e7;
+}
+
+.breadcrumb{
+	background: #FFFFFF;
+	border-radius: 0;
+	margin-left: -14px;
+    margin-right: -14px;
+    padding: 14px 15px;
+}
+
+.breadcrumb>li>a{
+	color: #666;
+}
+
+.divider{
+	height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+/*content*/
+
+#content{
+	background: #ececec;
+}
+
+.form-inline{
+	min-width: 1000px;
+}
+
+#idcard{
+	width: 250px;
+	margin-right: 50px;
+}
+
+#tel{ margin-right: 50px;}
+
+#name{ margin-right: 50px;}
+
+
+/*用户信息表格*/
+.page-table{
+	margin-top: 60px;
+}
+
+.page-table a{
+	color: #178ACC;
+}
+
+.page-table1{
+	margin-bottom: 100px;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+/*footer*/
+.panel-footer{
+	background-color: #28a1e7;
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid transparent;
+}
