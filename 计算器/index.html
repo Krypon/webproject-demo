@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>简易智能计算器</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="calculator">
+			<!--结果显示-->
+			<div class="rescult">
+				<textarea type="text" id="result0" onfocus="this.blur();"></textarea>
+				<textarea type="text" id="result" onfocus="this.blur();"></textarea>
+			</div>
+			<!--科学计算器布局-->
+			<div id="sci">
+				<div class="sci1">
+					<button id="bt1" onclick="zero()">C</button>
+					<button id="bt2" onclick="back()">DEL</button>
+					<button id="bt3" onclick="pow1()">^</button>
+					<button id="bt4" onclick="num('π')">π</button>
+					<button id="bt5" onclick="pow2()">√</button>
+				</div>
+				<div class="sci2">
+					<button id="bt6" onclick="sin()">sin</button>
+					<button id="bt7" onclick="num('(')">(</button>
+					<button id="bt8" onclick="num(')')">)</button>
+					<button id="bt9" onclick="divide1()">1/X</button>
+					<button id="bt10" onclick="divide()">÷</button>
+				</div>
+				<div class="sci3">
+					<button id="bt11" onclick="cos()">cos</button>
+					<button id="bt12" onclick="num(7)">7</button>
+					<button id="bt13" onclick="num(8)">8</button>
+					<button id="bt14" onclick="num(9)">9</button>
+					<button id="bt15" onclick="times()">×</button>
+				</div>
+				<div class="sci4">
+					<button id="bt16" onclick="tan()">tan</button>
+					<button id="bt17" onclick="num(4)">4</button>
+					<button id="bt18" onclick="num(5)">5</button>
+					<button id="bt19" onclick="num(6)">6</button>
+					<button id="bt20" onclick="minus()">-</button>
+				</div>
+				<div class="sci5">
+					<button id="bt21" onclick="ln()">ln</button>
+					<button id="bt22" onclick="num(1)">1</button>
+					<button id="bt23" onclick="num(2)">2</button>
+					<button id="bt24" onclick="num(3)">3</button>
+					<button id="bt25" onclick="plus()">+</button>
+				</div>
+				<div class="sci6">
+					<button id="bt26" onclick="log()">log</button>
+					<button id="bt27" onclick="num(0)">0</button>
+					<button id="bt28" onclick="dot()">.</button>
+					<button id="bt29" onclick="quyu()">%</button>
+					<button id="bt30" onclick="equal()">=</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/calcu.js">
+		</script>
+	</body>
+
+</html>
