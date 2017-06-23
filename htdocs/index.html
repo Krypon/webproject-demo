@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>百度新闻</title>
+    <link rel="stylesheet" type="text/css" href="css/resect.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/news.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="cf">
+            <a href="#" class="logo"><span class="iconfont">&#xe6a9;</span></a>
+            <a href="#" class="user"><span class="iconfont">&#xe65a;</span></a>
+            <a href="#" class="more"><span class="iconfont">&#xe602;</span></a>
+            <a href="#" class="search"><span class="iconfont">&#xe604;</span></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">精选</a><i></i></li>
+                <li><a href="#">百家</a><i></i></li>
+                <li><a href="#">本地</a><i></i></li>
+                <li><a href="#">图片</a><i></i></li>
+                <li><a href="#">娱乐</a><i></i></li>
+                <li><a href="#">社会</a><i></i></li>
+                <li><a href="#">军事</a><i></i></li>
+                <li><a href="#">互联网</a><i></i></li>
+                <li><a href="#">科技</a><i></i></li>
+                <li><a href="#">女人</a><i></i></li>
+                <li><a href="#">更多</a><i></i></li>
+            </ul>
+        </nav>
+        <article class="news-main">
+			<ul class="news-lists">
+                <!-- 自动添加新闻列表 -->
+				<!-- <li class="news-list">
+					<div class="newsimg">
+						<img src="img/news2.JPEG" width="100%">
+					</div>
+					<div class="newscontent">
+						<h1>中国城市房价完全报告 合肥领衔10月同比涨49%</h1>
+						<p><span class="newstime">2016年12月1日</span><span class="newssrc">搜狐热搜</span></p>
+					</div>
+				</li> -->
+			</ul>
+        </article>
+    </div>
+    <script  src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var deviceWidth = $('body').width();
+        $('nav li').each(function(index, item) {
+            if ($(this).find('a').html().split('').length > 2) {
+                $(this).width(deviceWidth / 3);
+            } else {
+                $(this).width(deviceWidth / 6);
+            }
+        });
+    });
+    </script>
+    <script type="text/javascript" src="js/news.js"></script>
+</body>
+
+</html>
