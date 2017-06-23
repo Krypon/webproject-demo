@@ -1,0 +1,88 @@
+/*容器*/
+.wrap{
+	background: #f1f1f1;
+    min-width: 402px;
+    min-height: 720px;
+}
+
+.head-wrap{
+	min-width: 360px;
+}
+
+/*导航栏*/
+header{
+	min-width: 400px;
+}
+
+.nav{
+	margin: 0 auto;
+    position: absolute;
+    top: 40%;
+}
+
+/*左边导航栏*/
+
+
+a.blod_a{
+	float: left;
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+a.normal_a{
+	visibility: hidden;
+}
+
+a.bri{
+	margin-right: 6%;
+    background: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    color: #666;
+}
+
+/*中间表单部分*/
+.content{
+	text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.content img{
+	width: 175px;
+    height: 55px;
+}
+
+.content input{
+	width: 270px;
+	margin-left: -20%;
+}
+
+.photo{
+	background: url(../img/camerar1.png) no-repeat 95%;
+}
+
+.content form{
+	margin-top: 10px;
+}
+
+.content button{
+	width: 80px;
+}
+
+footer{
+	min-width: 400px;
+	height: 21%;
+}
+
+
+.foot_L{
+	padding-bottom: 3%;
+}
+
+.foot_R{
+	text-align: center;
+}
