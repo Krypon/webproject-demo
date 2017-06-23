@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>hao123</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style2.css"/>
+		<link rel="stylesheet" rev="stylesheet" id="style" type="text/css" media="all">
+	</head>
+
+	<body>
+		
+		<div class="wrap">
+			<header class="hao-tools">
+				<a class="sethome" href="#">
+					<span class="js-text">设为首页</span>
+				</a>
+				<div class="hao-logo">
+					<a href="#" class="logo-img"><img src="img/richanglogo168_24.png" /></a>
+				</div>
+				<div class="hao-col">
+					<div class="colweather" id="weatherv2">
+						<a href="#" class="colweather-city">
+							<span class="weather-city">广州</span>
+							<span class="weather-arrow"></span>
+						</a>
+						<a href="#" class="colweather-pm">
+							<span class="weather-pm">优</span>
+						</a>
+						<a href="#" class="colweather-info">
+							<span class="weather-icon"></span>
+							<span class="weather-txt">多云</span>
+							<span class="weather-temp">30~22℃</span>
+						</a>
+					</div>
+					<div class="colcalendar" id="calendarv2">
+						<a href="#" class="calendar">
+							<span class="calendar-data">10月9日</span>
+							<span class="calendar-week">周日</span>
+							<span class="calendar-nongli">九月初九</span>
+						</a>
+					</div>
+					<div class="hao-star">
+						<a href="#" class="star">星座运势</a>
+					</div>
+				</div>
+				<div class="hao-link">
+					<div class="loginlink">
+						<a href="#" class="login">登录</a>
+					</div>
+					<a href="#" class="pan">云盘</a>
+					<a href="#" class="mail">邮箱</a>
+					<a href="#" class="browser">浏览器</a>
+					<a href="#" class="skin">换肤</a>
+					<div class="headjoke">
+						<a href="#" class="headjoke-link">
+							<i class="smile"></i>
+							<span class="joke-text">女汉子就别穿裙子</span>
+						</a>
+					</div>
+				</div>
+			</header>
+			<div class="hao-search">
+				<div class="hook-left">
+					<a class="link-hook" title="百度首页" href="https://www.baidu.com/s">
+						<img class="hook-img" src="img/bd_logo1.png" />
+					</a>
+				</div>
+
+				<form class="form-hook" action="https://www.baidu.com/s">
+					<input class="input-hook" type="text" name="baidu" />
+					<input class="button-hook" type="submit" value="百度一下" />
+				</form>
+				<div class="skin-icon" id="skin">
+					<!--<ul class="skin-colour" id="skinStyle" onchange="change_skin(this.value)">
+						<li class="skin-text" value="">换肤:</li>
+						<li class="green" value="style.css"></li>
+						<li class="orange" value="style_2.css"></li>
+						<li class="blue" value="style_3.css"></li>
+					</ul>-->
+					<select onchange="change_skin(this.value)" id="skinStyle">
+				        <option value="">改变颜色</option>
+				        <option value="css/style.css">绿色</option>
+				        <option value="css/style_2.css">蓝色</option>
+				        
+				    </select>
+				</div>
+			</div>
+			<div class="hao-hotsearch">
+				<ul class="hotsearch">
+					<li class="hotsearch-icon">
+						<a class="search-icon" href="#"></a>
+					</li>
+					<li>
+						<a href="#">北京天气</a>
+					</li>
+					<li>
+						<a href="#">NBA</a>
+					</li>
+					<li>
+						<a href="#">大张伟回国自首</a>
+					</li>
+					<li>
+						<a href="#">三星停售Note7</a>
+					</li>
+					<li>
+						<a href="#">王宝强首谈离婚</a>
+					</li>
+					<li>
+						<a href="#">宋茜加盟跑男5</a>
+					</li>
+					<li>
+						<a href="#">张靓颖身上淤青</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<section class="menu-wrap">
+					<ul class="menus-ul">
+						<li class="menu active">
+							<a href="#" class="menu-link active">首页</a>
+						</li>
+						<li class="menu">
+							<a href="#" class="menu-link">电视剧</a>
+						</li>
+						<li class="menu">
+							<a href="#" class="menu-link">最新电影</a>
+						</li>
+						<li class="menu">
+							<a href="#" class="menu-link">新闻头条</a>
+						</li>
+						<li class="menu">
+							<a href="#" class="menu-link">八卦娱乐</a>
+						</li>
+						<li class="menu">
+							<a href="#" class="menu-link">军事热点</a>
+						</li>
+						<li class="menu">
+							<a href="#" class="menu-link">热门游戏</a>
+						</li>
+						<li class="menu">
+							<a href="#" class="menu-link">小游戏</a>
+						</li>
+						<li class="menu">
+							<a href="#" class="menu-link">今日特价</a>
+						</li>
+						<li class="menu">
+							<a href="#" class="menu-link">特价旅游</a>
+						</li>
+						<li class="menu">
+							<a href="#" class="menu-link">本地生活</a>
+						</li>
+					</ul>
+				</section>
+				<section class="govsite-top">
+					<ul class="govsite-ul">
+						<li class="govsite-item">
+							<a href="" class="govsite-link active">权威推荐</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">人民网</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">新华网</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">央视网</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">国际在线</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">中国日报网</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">中国网</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">中国经济网</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">光明网</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">央广网</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">求是网</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">中国青年网</a>
+						</li>
+						<li class="govsite-item">
+							<a href="" class="govsite-link">中国网信网</a>
+						</li>
+					</ul>
+				</section>
+				<section class="layout-content">
+					<aside class="layout-left">
+						<ul class="starbar">
+							<li class="startbar-list">
+								<i class="star-icon i-tv"></i>
+								<a href="" class="star-link">电视剧</a>
+								<span class="split">|</span>
+								<a href="" class="star-link">综艺</a>
+							</li>
+							<li class="startbar-list">
+								<i class="star-icon i-game"></i>
+								<a href="" class="star-link">游戏</a>
+								<span class="split">|</span>
+								<a href="" class="star-link">小游戏</a>
+							</li>
+							<li class="startbar-list">
+								<i class="star-icon i-movie"></i>
+								<a href="" class="star-link">电影</a>
+								<span class="split">|</span>
+								<a href="" class="star-link">直播</a>
+							</li>
+							<li class="startbar-list">
+								<i class="star-icon i-comic"></i>
+								<a href="" class="star-link">动画</a>
+								<span class="split">|</span>
+								<a href="" class="star-link">漫画</a>
+							</li>
+							<li class="startbar-list">
+								<i class="star-icon i-news"></i>
+								<a href="" class="star-link">新闻</a>
+								<span class="split">|</span>
+								<a href="" class="star-link">军事</a>
+							</li>
+							<li class="startbar-list">
+								<i class="star-icon i-travel"></i>
+								<a href="" class="star-link">旅游</a>
+								<span class="split">|</span>
+								<a href="" class="star-link">音乐</a>
+							</li>
+							<li class="startbar-list">
+								<i class="star-icon i-lottery"></i>
+								<a href="" class="star-link">彩票</a>
+								<span class="split">|</span>
+								<a href="" class="star-link">股票</a>
+							</li>
+							<li class="startbar-list">
+								<i class="star-icon i-funny"></i>
+								<a href="" class="star-link">搞笑</a>
+								<span class="split">|</span>
+								<a href="" class="star-link">小说</a>
+							</li>
+							<li class="startbar-list">
+								<i class="star-icon i-special"></i>
+								<a href="" class="star-link">特价</a>
+								<span class="split">|</span>
+								<a href="" class="star-link">手机</a>
+							</li>
+							<li class="startbar-list">
+								<i class="star-icon i-education"></i>
+								<a href="" class="star-link">教育</a>
+								<span class="split">|</span>
+								<a href="" class="star-link">理财</a>
+							</li>
+						</ul>
+					</aside>
+					<article class="layout-right">
+						<div class="box-site">
+							<ul class="site-ul">
+								<li class="site-item">
+									<i class="site-icon i-baidu"></i>
+									<a href="" class="site-text">百度</a>
+									•
+									<a href="" class="site-text site-text2">贴吧</a>
+								</li>
+								<li class="site-item">
+									<i class="site-icon i-xinlang"></i>
+									<a href="" class="site-text">新浪</a>
+									•
+									<a href="" class="site-text site-text2">微博</a>
+								</li>
+								<li class="site-item">
+									<i class="site-icon i-souhu"></i>
+									<a href="" class="site-text">搜狐</a>
+									•
+									<a href="" class="site-text site-text2">热点</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-tengxun"></i>
+										<span>腾&nbsp;讯</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-wangyi"></i>
+										<span>网&nbsp;易</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-youku"></i>
+										<span>优 酷 网</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-tianmao"></i>
+										<span>天&nbsp;猫</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-fenghuang"></i>
+										<span>凤 凰 网</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-taobao"></i>
+										<span>淘 宝 网</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-mianfei"></i>
+										<span>免费游戏</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-youxi"></i>
+										<span>4399游戏</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-yingshi"></i>
+										<span>好123影视</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-jingdong"></i>
+										<span>京东商城</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-suning"></i>
+										<span>苏宁易购</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-tejia"></i>
+										<span>今日特价</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-meiguo"></i>
+										<span>美国在线</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-qiche"></i>
+										<span>汽车之家</span>
+									</a>
+								</li>
+								<li class="site-item">
+									<a href="" class="site-text">
+										<i class="site-icon i-juhuasuan"></i>
+										<span>聚 划 算</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="box-famoussite">
+							<ul class="fm-ul">
+								<li class="fm-item">
+									<a href="" class="fm-link">东方财富</a>
+									•
+									<a href="" class="fm-link">理财</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">58 同 城</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">房 天 下</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">携程旅行网</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">百度地图</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">12306</a>
+									•
+									<a href="" class="fm-link">旅游</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">世纪佳缘</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link" style="color: #f50;">赶 集 网</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">易 车 网</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">体育</a>
+									•
+									<a href="" class="fm-link">NBA</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">爱卡汽车</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">萌主页</a>
+									•
+									<a href="" class="fm-link">动漫</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link" style="color: #f50;">唯 品 会</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">hao到家</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">途牛旅游网</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">hao123浏览器</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">头条新闻</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">直播吧</a>
+									•
+									<a href="" class="fm-link">开服表</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link fm-green">苏宁手机馆</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link fm-green">彩票开奖</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link fm-green">1 号 店</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link fm-green">阿里旅行</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link fm-green">爱淘宝</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link fm-green">购物</a>
+									•
+									<a href="" class="fm-link fm-green">手机</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">163邮箱</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">QQ邮箱</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">中华军事</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">网易云音乐</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">凤凰军事</a>
+								</li>
+								<li class="fm-item">
+									<a href="" class="fm-link">腾讯视频</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</section>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function change_skin(obj){
+				if(obj.length<1){
+					return;
+				}else{
+					document.getElementById("style").href=obj;
+				}
+			}
+		</script>
+	</body>
+
+</html>
