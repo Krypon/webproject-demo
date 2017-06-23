@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>百度一下,你就知道</title>
+    <link href="css/baidustyle.css" rel="stylesheet" />
+    <link rel="icon" href="img/baidu.png">
+    <!--[if lt IE 9]> 
+		<script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div class="wrap">
+        <!--头部，菜单栏-->
+        <header class="nav">
+            <!--左边天气等菜单-->
+            <div class="menu-left">
+                <div class="menu-weather">
+                    <a href="#" class="city-weather">
+                        <span class="city-name">广州:</span>
+                        <span class="weather-temp">
+								<i class="weather-icon"></i>
+								<span class="temp">19℃</span>
+                        </span>
+                        <span class="polution">优</span>
+                        <span class="polution-num">27</span>
+                        <span class="vertical">|</span>
+                    </a>
+                </div>
+                <div class="menu-skin">
+                    <a href="#">宝箱</a>
+                    <a href="#">换肤</a>
+                    <a href="#">消息</a>
+                </div>
+            </div>
+            <!--右边，主菜单导航-->
+            <div class="menu-right">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="blod_a">糯米</a></li>
+                    <li class="nav-item"><a href="#" class="blod_a">新闻</a></li>
+                    <li class="nav-item"><a href="#" class="blod_a">hao123</a></li>
+                    <li class="nav-item"><a href="#" class="blod_a">地图</a></li>
+                    <li class="nav-item"><a href="#" class="blod_a">视频</a></li>
+                    <li class="nav-item"><a href="#" class="blod_a">贴吧</a></li>
+                    <li class="nav-item"><a href="#" class="blod_a normal_a">登录</a></li>
+                    <li class="nav-item nav-set">
+                        <a href="#" class="blod_a set_a">设置</a>
+                        <!-- 设置的下拉 -->
+                        <div class="set-list">
+                            <div class="bdnuarrow"></div>
+                            <a class="set-text" href="#">搜索设置</a>
+                            <a class="set-text" href="#">高级搜索</a>
+                            <a class="set-text" href="#">关闭预测</a>
+                            <a class="set-text" href="#">搜索历史</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-bri">
+                        <a href="#" class="blod_a bri">更多产品</a>
+                        <!--侧边栏-更多产品-->
+                        <div class="pro-mainlink">
+                            <div class="productmore">更多产品</div>
+                            <div class="pro-content">
+                                <a href="#" name="pro-yinyu">
+                                    <span class="pro-img1"></span> 音乐
+                                </a>
+                                <a href="#" name="pro-tupian">
+                                    <span class="pro-img2"></span> 图片
+                                </a>
+                                <a href="#" name="pro-zhidao">
+                                    <span class="pro-img3"></span> 知道
+                                </a>
+                                <a href="#" name="pro-wenku">
+                                    <span class="pro-img4"></span> 文库
+                                </a>
+                                <a href="#" name="pro-bang">
+                                    <span class="pro-img5"></span> 风云榜
+                                </a>
+                                <div class="pro-all">
+                                    <a href="#" name="pro-more">全部产品>></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--内容部分，百度搜索-->
+        <section class="search">
+            <img class="search-img" src="img/bd_logo1.png" alt="百度一下，你就知道">
+            <form class="form-input" action="http://www.baidu.com/s" method="get" target="_blank">
+                <input type="text" name="baidu" class="photo">
+                <button type="submit">百度一下</button>
+            </form>
+        </section>
+        <!--内容部分，关注，导航等内容-->
+        <section class="content">
+            <div class="main">
+                <!--内容部分的导航栏-->
+                <div class="menu-content">
+                    <ul class="menu-list" id="menu-list">
+                        <li class="menu-c menu-item">
+                            <a href="#tab1">
+                                <i class="mine-icon"></i>
+                                <span class="mine-text">我的关注</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#tab2">导航</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#tab3">推荐</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#tab4">体育</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#tab5">小说</a>
+                        </li>
+                    </ul>
+                    <div class="menu-blank"></div>
+                    <span class="menu-set" title="设置">
+							<div class="menu-icon"></div>
+						</span>
+                </div>
+                <!--每页的具体内容-->
+                <div class="content-wrap">
+                    <!--我的关注-->
+                    <div class="attention cont-eq" id="tab1" style="display: block;">
+                        <div class="my-nav">
+                            <div class="my-em"><em></em></div>
+                            <span class="my-text">我的导航</span>
+                            <span class="my-num">(0)</span>
+                        </div>
+                        <div class="my-novel">
+                            <div class="my-em"><em></em></div>
+                            <span class="my-text">我的小说</span>
+                            <span class="my-num">(0)</span></div>
+                        <div class="my-custom">
+                            <div class="custom-btn">
+                                <span class="custom-icon"></span>
+                                <span class="custom-text">自定义</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--导航-->
+                    <div class="cont-eq content1" id="tab2" style="display: none;">
+                        <div class="cont2-wrap">
+                            <h3>猜你喜欢</h3>
+                            <ul class="cont2">
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/9483.png?1"><span class="cont-text">百度糯米</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95541.png"><span class="cont-text">京东商城</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95780.png"><span class="cont-text">1号店</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95537.png?99"><span class="cont-text">苏宁易购</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95693.png"><span class="cont-text">唯品会</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95517.png"><span class="cont-text">当当网</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss2.bdstatic.com/lfoZeXSm1A5BphGlnYG/icon/200974.png"><span class="cont-text">极客学院</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/82906.png"></i><span class="cont-text">jquery</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3"><span class="cont-text">印象笔记</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/7549.png"><span class="cont-text">adobe中国</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/9321.png"><span class="cont-text">微软</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/7381.png"></i><span class="cont-text">office2012</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/95586.png"><span class="cont-text">英雄联盟</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3"><span class="cont-text">HBuilder</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95511.png"><span class="cont-text">腾讯</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95753.png"><span class="cont-text">微信</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/7183.png"><span class="cont-text">网易云音乐</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/10488.png"><span class="cont-text">迅雷产品</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/7082.png"><span class="cont-text">QQ下载</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/10424.png"><span class="cont-text">Photoshop</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/7549.png"><span class="cont-text">adobe</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3"><span class="cont-text">office2010免费完整版下载</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/7656.png"><span class="cont-text">百度VIP</span></a>
+                                </li>
+                                <li class="cont2-list">
+                                    <a href=""><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/9321.png"><span class="cont-text">微软商店</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cont2-wrap cont2-info">
+                            <h3>资讯信息</h3>
+                            <ul class="cont2">
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/b8014a90f603738ddb65b5efbb1bb051f919ecd4.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/77094b36acaf2edda9a41924851001e9380193a1.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/50da81cb39dbb6fd15745ceb0124ab18962b37cb.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/472309f790529822a337690edfca7bcb0b46d4f3.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/adaf2edda3cc7cd968988d143101213fb90e9142.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/a6efce1b9d16fdfa54d97f23bc8f8c5495ee7b42.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/6d81800a19d8bc3ef15d56078a8ba61ea9d345a1.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/a9d3fd1f4134970a783040e29dcad1c8a6865dbf.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/71cf3bc79f3df8dc847edf5cc511728b461028bf.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/0ff41bd5ad6eddc43ba4e43631dbb6fd536633bf.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/0823dd54564e9258e6bcd6239482d158cdbf4e76.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/d0c8a786c9177f3e28bcacc078cf3bc79e3d5676.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/1c950a7b02087bf4bcb90724fad3572c10dfcfa2.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/562c11dfa9ec8a13de4f072dff03918fa1ecc0a2.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/34fae6cd7b899e5177066ad94aa7d933c9950d76.jpg"></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/42166d224f4a20a48b4b6c0a98529822730ed0a2.jpg"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cont2-wrap cont2-info">
+                            <h3>休闲娱乐</h3>
+                            <ul class="cont2">
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/faedab64034f78f0f861703e71310a55b2191c90.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/d1a20cf431adcbeffa5f94cba4af2edda2cc9f90.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/54fbb2fb43166d226b892c5a4e2309f79152d205.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/64380cd7912397dd256f72c95182b2b7d1a287ed.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/0dd7912397dda144f5ef557cbab7d0a20df4861d.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/faf2b2119313b07e984369c604d7912396dd8c05.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/d8f9d72a6059252dbe32f7c93c9b033b5ab5b9d2.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/0b55b319ebc4b74555b05ddbc7fc1e178b8215d2.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/b2de9c82d158ccbff9428cf411d8bc3eb0354105.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/72f082025aafa40f9620f713a364034f79f0191d.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/a5c27d1ed21b0ef4db26a190d5c451da80cb3e35.jpg" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cont2-wrap cont2-info">
+                            <h3>购物海淘</h3>
+                            <ul class="cont2">
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/8644ebf81a4c510fe1eedad46859252dd52aa5d1.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/09fa513d269759ee717b8a06bafb43166c22dfd0.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/aa18972bd40735fa1ddba47496510fb30e2408d0.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/83025aafa40f4bfb251ea79a0b4f78f0f6361835.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/242dd42a2834349b3c15564bc1ea15ce37d3bee8.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/810a19d8bc3eb135f4ec5d76ae1ea8d3fc1f44d0.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/95eef01f3a292df550ff46d8b4315c6034a8733b.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/1b4c510fd9f9d72a5a4528d3dc2a2834359bbbde.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/14ce36d3d539b6004ef2e57ae150352ac65cb73b.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/37d12f2eb9389b503f36d99c8d35e5dde6116e36.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/c83d70cf3bc79f3d54c0dcfeb2a1cd11738b29de.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/241f95cad1c8a7866fe373c06f09c93d71cf5036.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/5366d0160924ab185cdfd8f93dfae6cd7a890b36.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/63d0f703918fa0ec12e75cc32e9759ee3c6ddbdf.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/9213b07eca8065385ff89cdd9fdda144ac3482e9.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/500fd9f9d72a605919e8d8d42034349b023bba07.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/7dd98d1001e939014622b5f073ec54e737d196df.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/e4dde71190ef76c6d1f2c3e59516fdfaae5167df.jpg" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cont2-wrap cont2-info">
+                            <h3>生活周边</h3>
+                            <ul class="cont2">
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/a1ec08fa513d269712f7e2905dfbb2fb4216d8d3.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/cdbf6c81800a19d824fbbdcb3bfa828ba71e4607.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/e61190ef76c6a7ef6b3042ebf5faaf51f2de66ed.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/d53f8794a4c27d1e6cde020a13d5ad6edcc43807.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/29381f30e924b899ae3141f666061d950b7bf6ea.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/2f738bd4b31c87015f968a282f7f9e2f0608ffd8.jpg" /></a>
+                                </li>
+                                <li class="cont-info">
+                                    <a href=""><img src="https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/4b90f603738da977cae7bfe5b851f8198718e330.jpg" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--推荐-->
+                    <div class="cont-eq content2" id="tab3" style="display: none;">推荐</div>
+                    <!--体育-->
+                    <div class="cont-eq content3" id="tab4" style="display: none;">体育</div>
+                    <!--小说-->
+                    <div class="cont-eq content4" id="tab5" style="display: none;">小说</div>
+                </div>
+                <!--更多滚动的标志-->
+                <div class="more-bar">
+                    <div class="load-text">滚动查看更多</div>
+                    <div class="rect">
+                        <div class="animate-arrow"></div>
+                    </div>
+                </div>
+                <!--音乐侧边栏-->
+                <div class="sidebar">
+                    <span class="s-music">音乐</span>
+                </div>
+                <!--返回顶部-->
+                <div class="top-feed" id="back-to-top">
+                    <span class="to-top"></span>
+                    <span class="top-text">回到顶部</span>
+                </div>
+            </div>
+        </section>
+        <!--底部，foot内容-->
+        <footer class="foot">
+            <div class="foot-box">
+                <p>
+                    <a href="#">设为首页</a>&nbsp;
+                    <span>©2016 Baidu</span>
+                    <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                    <a href="http://jianyi.baidu.com/">意见反馈</a>
+                    <span>京ICP证030173号</span>
+                </p>
+                <p class="foot-b">京公网安备11000002000001号</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/baidu.js"></script>
+</body>
+
+</html>

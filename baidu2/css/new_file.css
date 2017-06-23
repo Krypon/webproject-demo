@@ -1,0 +1,129 @@
+/*内容部分的导航*/
+.menu-content{
+	position: relative;
+    width: 893px;
+    text-align: left;
+    font-size: 14px;
+    height: 39px;
+    line-height: 39px;
+    margin: 0 auto;
+    border-top: 1px solid rgb(233, 233, 233);
+    border-right: 1px solid rgb(233, 233, 233);
+    border-left: 1px solid rgb(233, 233, 233);
+    display: flex;
+}
+
+
+/*我的关注*/
+.menu-mine,.mine-icon,.mine-text,.menu-wrapper,.menu-item,.menu-set{
+	display: inline-block;
+	zoom: 1;
+    vertical-align: top;
+}
+
+.menu-mine{
+	float: left;
+	text-align: left;
+	width: 124px;
+	height: 39px;
+	line-height: 39px;
+	background: #9a9da2 !important;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	padding-top: 1px;
+}
+
+ .mine-icon {
+    margin: 11px 0 0 20px;
+    width: 20px;
+    height: 18px;
+    background: url(../img/menu-mine.png) no-repeat -15px 0;
+    background-position: -144px 0;
+}
+
+.mine-text{
+	margin-left: 3px;
+	height: 100%;
+}
+
+.menu-mine:hover{
+	background-color: #b3b6bb !important;
+    color: #fff;
+    background-image: none !important;
+    filter: none !important;
+}
+
+.menu-mine:hover{
+	margin-top: -1px;
+    margin-bottom: -1px;
+    border-top: 1px solid #b3b6bb;
+    border-bottom: 1px solid #b3b6bb;
+}
+
+/*导航内容列*/
+.menu-list{
+	float: left;
+	display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    width: 719px;
+}
+
+.menu-wrapper{
+	width: auto;
+	float: left;
+}
+
+.menu-item{
+	color: #333;
+    width: 80px;
+    height: 39px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #b3b6bb !important;
+    color: #fff;
+    background-image: none !important;
+    filter: none !important;
+}
+.menu-item:hover {
+    margin-top: -1px;
+    margin-bottom: -1px;
+    border-top: 1px solid #b3b6bb;
+    border-bottom: 1px solid #b3b6bb;
+}
+
+/*未设置区域*/
+.menu-blank{
+	flex: 3 0 auto;
+	height: 39px;
+}
+
+/*设置*/
+.menu-set{
+	float: right;
+    width: 18px;
+    height: 39px;
+    padding: 0 21px 0 11px;
+    cursor: pointer;
+}
+
+.menu-icon{
+	width: 100%;
+    height: 18px;
+    margin-top: 11px;
+    overflow: hidden;
+    background: url(../img/menu-mine.png) no-repeat -121px -49px;
+}
+
+/*每页的具体内容*/
+.content-wrap{
+	width: 893px;
+    min-height: 363px;
+    _height: 363px;
+    _overflow: visible;
+    border: 1px solid #e9e9e9;
+}
