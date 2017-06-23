@@ -1,0 +1,151 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.wrap{
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	margin-left: -120px;
+	width: 240px;
+	height: 240px;
+	/*根据此位置调试*/
+	/*perspective-origin: 1000px;
+	perspective: 1000px;*/
+}
+
+@-webkit-keyframes animation{
+	0%{-webkit-transform:rotateZ(270deg); }  
+    25%{-webkit-transform:rotateY(180deg); }  
+    50%{-webkit-transform:rotateZ(-270deg);}  
+    75%{-webkit-transform:rotateY(-180deg);} 
+}
+
+@-moz-keyframes animation{
+	0%{-moz-transform:rotateZ(270deg); }  
+    25%{-moz-transform:rotateY(180deg); }  
+    50%{-moz-transform:rotateZ(-270deg);}  
+    75%{-moz-transform:rotateY(-180deg);}   
+}
+
+@-ms-keyframes animation{
+	0%{-ms-transform:rotateZ(270deg); }  
+    25%{-ms-transform:rotateY(180deg); }  
+    50%{-ms-transform:rotateZ(-270deg);}  
+    75%{-ms-transform:rotateY(-180deg);} 
+}
+
+@-o-keyframes animation{
+	0%{-o-transform:rotateZ(270deg); }  
+    25%{-o-transform:rotateY(180deg); }  
+    50%{-o-transform:rotateZ(-270deg);}  
+    75%{-o-transform:rotateY(-180deg);} 
+}
+
+@keyframes animation{
+	0%{transform:rotateZ(270deg); }  
+    25%{transform:rotateY(180deg); }  
+    50%{transform:rotateZ(-270deg);}  
+    75%{transform:rotateY(-180deg);}  
+}
+
+.box{
+	-webkit-animation: animation 3s ease-in-out 0.1s infinite;  
+    -moz-animation: animation 3s ease-in-out 0.1s infinite; 
+    -ms-animation: animation 3s ease-in-out 0.1s infinite;  
+    -o-animation: animation 3s ease-in-out 0.1s infinite;  
+    animation: animation 3s ease-in-out 0.1s infinite;	
+	-webkit-transform-style: transform-style: preserve-3d;
+	-moz-transform-style: transform-style: preserve-3d;
+	-ms-transform-style: transform-style: preserve-3d;
+	transform-style: transform-style: preserve-3d;
+	transform-style: preserve-3d;	
+	-webkit-transform-origin: transform-origin:120px 120px;
+	-moz-transform-origin: transform-origin:120px 120px;
+	-ms-transform-origin: transform-origin:120px 120px;
+	-o-transform-origin: transform-origin:120px 120px;
+	transform-origin: transform-origin:120px 120px;
+	transform-origin:120px 120px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.one, .two, .three, .four, .five, .six{
+	position: absolute;
+	width: 240px;
+	height: 240px;
+	background: rgba(255,200,100,0.8);
+	border: 3px solid #ccc;
+
+	
+	  
+}
+
+.one{
+	background: #fff;
+	-webkit-transform: translateZ(120px);
+	-moz-transform: translateZ(120px);
+	-ms-transform: translateZ(120px);
+	-o-transform: translateZ(120px);
+	transform: translateZ(120px);
+}
+
+.two{
+	background: #060DAB;
+	-webkit-transform: transform: rotateX(180deg) translateZ(120px);
+	-moz-transform: transform: rotateX(180deg) translateZ(120px);
+	-ms-transform: transform: rotateX(180deg) translateZ(120px);
+	-o-transform: transform: rotateX(180deg) translateZ(120px);
+	transform: rotateX(180deg) translateZ(120px);
+
+}
+
+.three{
+	background: #FFFF00;
+	-webkit-transform: transform:rotateY(-90deg) translateZ(120px);
+	-moz-transform: transform:rotateY(-90deg) translateZ(120px);
+	-ms-transform: transform:rotateY(-90deg) translateZ(120px);
+	-o-transform: transform:rotateY(-90deg) translateZ(120px);
+	transform: transform:rotateY(-90deg) translateZ(120px);
+	transform: rotateY(-90deg) translateZ(120px);
+	
+}
+
+.four{
+	background: #6CE26C;
+	-webkit-transform: transform: rotateY(90deg) translateZ(120px);
+	-moz-transform: transform: rotateY(90deg) translateZ(120px);
+	-ms-transform: transform: rotateY(90deg) translateZ(120px);
+	-o-transform: transform: rotateY(90deg) translateZ(120px);
+	transform: transform: rotateY(90deg) translateZ(120px);
+	transform: rotateY(90deg) translateZ(120px);
+}
+
+.five{
+	background: #F44336;
+	-webkit-transform: transform: rotateX(90deg) translateZ(120px);
+	-moz-transform: transform: rotateX(90deg) translateZ(120px);
+	-ms-transform: transform: rotateX(90deg) translateZ(120px);
+	-o-transform: transform: rotateX(90deg) translateZ(120px);
+	transform: transform: rotateX(90deg) translateZ(120px);
+	transform: rotateX(90deg) translateZ(120px);
+}
+
+.six{
+	background: #FF9800;
+	-webkit-transform: transform: rotateX(-90deg) translateZ(120px);
+	-moz-transform: transform: rotateX(-90deg) translateZ(120px);
+	-ms-transform: transform: rotateX(-90deg) translateZ(120px);
+	-o-transform: transform: rotateX(-90deg) translateZ(120px);
+	transform: transform: rotateX(-90deg) translateZ(120px);
+	transform: rotateX(-90deg) translateZ(120px);
+}
+
+.color1{
+	width: 74px;
+	height: 74px;
+	float: left;
+	border: 3px solid #ccc;
+}
