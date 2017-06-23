@@ -1,0 +1,58 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	min-width: 600px;
+}
+
+.head{
+	width: 100%;
+	height: 100px;
+	background: #A29916;
+}
+
+.atricle{
+	width: 100%;
+	background: #FF9333;
+	overflow: hidden;
+}
+
+.middle{
+	width: 100%;
+	background: #4CA70A;
+	float: left;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	
+}
+
+.inner{
+	margin-left: 250px;
+	margin-right: 200px;
+}
+
+.left{
+	width: 250px;
+	background: #9E426C;
+	float: left;
+	margin-left: -100%;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+
+.right{
+	width: 200px;
+	background: #2C14A9;
+	float: left;
+	margin-left: -200px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+
+.foot{
+	width: 100%;
+	height: 100px;
+	background: #A29916;
+}
