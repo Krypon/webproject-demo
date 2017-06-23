@@ -1,0 +1,322 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.wrap {
+	width: 800px;
+	height: 800px;
+	margin: 100px 200px;
+}
+
+.SpongeBob {
+	position: relative;
+}
+
+.bodyBob {
+	width: 260px;
+	height: 400px;
+	background: #FFFF00;
+	z-index: 2;
+	position: absolute;
+}
+
+.eyes {
+	position: relative;
+	z-index: 3;
+}
+
+.leftEye,
+.rightEye {
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	border: 6px solid #000;
+	background: #fff;
+	position: absolute;
+	top: 60px;
+	left: 22px;
+}
+
+.leftEye {
+	left: 130px;
+}
+
+.left-blackEye,
+.right-blackEye {
+	width: 50px;
+	height: 50px;
+	border: 3px solid #000;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	background: #318EAB;
+	position: absolute;
+	top: 26px;
+	left: 24px;
+}
+
+.left-white,
+.right-white {
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: 14px;
+	left: 15px;
+}
+
+.left-blackEye,
+.right-blackEye {
+	-webkit-animation: blackeye 5s ease-in infinite;
+	-moz-animation: blackeye 5s ease-in infinite;
+	-o-animation: blackeye 5s ease-in infinite;
+	animation: blackeye 5s ease-in infinite;
+}
+
+@-webkit-keyframes blackeye {
+	0%,
+	20%,
+	50%,
+	70%,
+	100% {
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		-o-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+	30%,
+	40% {
+		-webkit-transform: translateX(15px);
+		-moz-transform: translateX(15px);
+		-o-transform: translateX(15px);
+		transform: translateX(15px);
+	}
+	80%,
+	90% {
+		-webkit-transform: translateX(-15px);
+		-moz-transform: translateX(-15px);
+		-o-transform: translateX(-15px);
+		transform: translateX(-15px);
+	}
+}
+
+.left-white,
+.right-white {
+	-webkit-animation: whiteeye 5s ease-in-out infinite;
+	-moz-animation: whiteeye 5s ease-in-out infinite;
+	-o-animation: whiteeye 5s ease-in-out infinite;
+	animation: whiteeye 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes whiteeye {
+	0%,
+	20%,
+	50%,
+	70%,
+	100% {
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		-o-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+	30%,
+	40% {
+		-webkit-transform: translate3d(3px, 4px, 0);
+		-moz-transform: translate3d(3px, 4px, 0);
+		-o-transform: translate3d(3px, 4px, 0);
+		transform: translate3d(3px, 4px, 0);
+	}
+	80%,
+	90% {
+		-webkit-transform: translate3d(-15px, 4px, 0);
+		-moz-transform: translate3d(-15px, 4px, 0);
+		-o-transform: translate3d(-15px, 4px, 0);
+		transform: translate3d(-15px, 4px, 0);
+	}
+}
+
+.line_right {
+	height: 6px;
+	border: 8px solid #000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transform-origin: right bottom;
+	-moz-transform-origin: right bottom;
+	-o-transform-origin: right bottom;
+	transform-origin: right bottom;
+	-webkit-transform: rotate(24deg);
+	-moz-transform: rotate(24deg);
+	-o-transform: rotate(24deg);
+	transform: rotate(24deg);
+	position: absolute;
+	left: 72px;
+	bottom: 90px;
+}
+
+.line_left {
+	height: 6px;
+	border: 8px solid #000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transform-origin: right bottom;
+	-moz-transform-origin: right bottom;
+	-o-transform-origin: right bottom;
+	transform-origin: right bottom;
+	-webkit-transform: rotate(-24deg);
+	-moz-transform: rotate(-24deg);
+	-o-transform: rotate(-24deg);
+	transform: rotate(-24deg);
+	position: absolute;
+	left: 12px;
+	bottom: 100px;
+}
+
+.line_bottom {
+	height: 10px;
+	border: 8px solid #000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	position: absolute;
+	left: 42px;
+	bottom: 100px;
+}
+
+.nose {
+	position: relative;
+}
+
+.nose-shape {
+	width: 40px;
+	height: 80px;
+	background: #FFFF00;
+	border: 5px solid #000;
+	border-bottom-color: transparent;
+	-webkit-border-radius: 45px 45px 40px 40px;
+	-moz-border-radius: 45px 45px 40px 40px;
+	-o-border-radius: 45px 45px 40px 40px;
+	border-radius: 45px 45px 40px 40px;
+	position: absolute;
+	top: 116px;
+	left: 108px;
+	z-index: 3;
+}
+
+.mouse {
+	position: relative;
+}
+
+.mouse-shape {
+	width: 200px;
+	height: 100px;
+	border: 5px solid #000;
+	position: absolute;
+	-webkit-border-radius: 0 0 100px 100px;
+	-moz-border-radius: 0 0 100px 100px;
+	-o-border-radius: 0 0 100px 100px;
+	border-radius: 0 0 100px 100px;
+	border-top-color: transparent;
+	top: 152px;
+	left: 29px;
+	z-index: 3;
+}
+
+.tooth {
+	position: relative;
+}
+
+.tooth-left {
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border: 5px solid #000;
+	-webkit-transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	-o-transform: rotate(15deg);
+	transform: rotate(15deg);
+	position: absolute;
+	top: 250px;
+	left: 80px;
+	z-index: 3;
+}
+
+.tooth-right {
+	width: 40px;
+	height: 35px;
+	background: #fff;
+	border: 5px solid #000;
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+	position: absolute;
+	top: 250px;
+	left: 140px;
+	z-index: 3;
+}
+
+.lip {
+	position: relative;
+}
+
+.lip-one {
+	width: 80px;
+	height: 70px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	border-top: 8px solid #FF00CC;
+	position: absolute;
+	left: 62px;
+	top: 246px;
+	z-index: 3;
+	-webkit-transform: rotate(188deg);
+	-moz-transform: rotate(188deg);
+	-o-transform: rotate(188deg);
+	transform: rotate(188deg);
+}
+
+.lip-two {
+	width: 80px;
+	height: 70px;
+	border-radius: 50%;
+	border-top: 8px solid #ff00cc;
+	position: absolute;
+	left: 120px;
+	top: 246px;
+	z-index: 3;
+	-webkit-transform: rotate(170deg);
+	-moz-transform: rotate(170deg);
+	-o-transform: rotate(170deg);
+	transform: rotate(170deg);
+}
+
+.lip-two:after {
+	content: '';
+	width: 30px;
+	height: 10px;
+	border-radius: 35px 26px 5px 5px;
+	background: #FFFF00;
+	position: absolute;
+	top: 13px;
+	left: 57px;
+	-webkit-transform: rotate(-16deg);
+	-moz-transform: rotate(-16deg);
+	-o-transform: rotate(-16deg);
+	transform: rotate(-16deg);
+}
