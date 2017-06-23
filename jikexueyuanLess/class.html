@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>课程库</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/class.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 导航部分 -->
+        <div class="header">
+            <div class="header-wrap">
+                <!-- logo -->
+                <a href="#" class="logo">
+                    <img src="img/logo.png">
+                </a>
+                <!-- 导航 -->
+                <nav>
+                    <ul class="nav-ul">
+                        <li class="nav-list"><a href="" class="nav-text">首页</a></li>
+                        <li>职业学院
+                            <i class="arrow-icon"></i>
+                            <div class="submenu school-list">
+                                <h3>前端学院</h3>
+                                <a href="#"><i class="web-icon"></i>Web 前端工程师</a>
+                                <h3>后端学院</h3>
+                                <a href="#"><i class="python-icon"></i>Python Web工程师</a>
+                                <a href="#"><i class="go-icon"></i>Go语言工程师</a>
+                                <h3>移动学院</h3>
+                                <a href="#"><i class="ios-icon"></i>iOS工程师</a>
+                            </div>
+                        </li>
+                        <li>会员课程
+                            <i class="arrow-icon"></i>
+                            <div class="submenu vip-lesson">
+                                <a href="#"><i class="kck-icon"></i>课程库<span>2500+</span></a>
+                                <a href="#"><i class="zyljt-icon"></i>职业路径图<span>9</span></a>
+                                <a href="#"><i class="zstxt-icon"></i>知识体系图<span>24</span></a>
+                                <a href="#"><i class="xlkc-icon"></i>系列课程<span>101</span></a>
+                                <a href="#"><i class="kcbq-icon"></i>课程标签<span>4000+</span></a>
+                                <a href="#"><i class="vip-icon"></i>VIP会员购买<span>30/月  260/年</span></a>
+                            </div>
+                        </li>
+                        <li>极客社区
+                            <i class="arrow-icon"></i>
+                            <div class="submenu vip-lesson">
+                                <a href="#"><i class="jswd-icon"></i>技术问答<span>20000+</span></a>
+                                <a href="#"><i class="wiki-icon"></i>Wiki<span>351</span></a>
+                                <a href="#"><i class="sq-icon"></i>社群<span>7000+</span></a>
+                                <a href="#"><i class="zygx-icon"></i>资源下载<span>3000+</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 登录等图标 -->
+                <div class="icon-box">
+                    <span class="search-icon" id="show-search">
+                    </span>
+                    <span class="app-icon loginlist">
+                        <div class="submenu">
+                            <i class="top-icon"></i>
+                            <img src="img/heade-rwm.png">
+                        </div>
+                    </span>
+                    <span class="logged">
+                        <a href="#"><img src="img/default.gif" id="userpoto"></a>
+                        <i id="uservip-icon" class="year-icon"></i>
+                          <ul class="logged-list">
+                            <li><a href="#"><i class="iconfont">&#xe687;</i>学习中心</a></li>
+                            <li><a href="#"><i class="iconfont">&#xe609;</i>个人主页</a></li>
+                            <li><a href="#"><i class="iconfont">&#xe63f;</i>消息通知</a></li>
+                            <li><a href="#"><i class="iconfont">&#xe666;</i>账号设置</a></li>
+                            <li><a href="#"><i class="iconfont">&#xe63d;</i>退出登录</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <form id="searchwrap" class="searchbar">
+                    <button><i class="iconfont">&#xe651;</i></button>
+                    <input type="text" name="" placeholder="输入搜索课程">
+                    <span class="iconfont" id="hide-search">&#xe6cc;</span>
+                </form>
+            </div>
+        </div>
+        <!-- 中间内容区域容器 -->
+        <div class="container">
+            <!-- 侧边栏区域 -->
+            <div class="aside">
+                <!-- 课程库二级菜单 -->
+                <div class="vertical-menus">
+                    <div class="menu-title">
+                        <a href="#"><i class="icon-course"></i><span>课程库</span></a>
+                    </div>
+                    <ul class="aside-clist">
+                        <li>
+                            <a href="#" class="ahover">移动开发</a>
+                            <div class="list-show">
+                                <div>
+                                    <dl>
+                                        <dt><a href="#">应用开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">IOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">游戏开发</a></dt>
+                                        <dd>
+                                            <a href="#">Cocos</a>
+                                            <a href="#">Unity3D</a>
+                                            <a href="#">Spritekit 2D</a>
+                                            <a href="#">Unreal</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">常用框架</a></dt>
+                                        <dd>
+                                            <a href="#">Cordova</a>
+                                            <a href="#">React Native</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="ahover">前端开发</a>
+                            <div class="list-show">
+                                <div>
+                                    <dl>
+                                        <dt>前端基础</dt>
+                                        <dd class="cf">
+                                            <a href="#">HTML</a>
+                                            <a href="#">CSS</a>
+                                            <a href="#">JavaScript</a>
+                                            <a href="#">HTML5</a>
+                                            <a href="#">CSS3</a>
+                                            <a href="#">技术前瞻</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>前端进阶</dt>
+                                        <dd class="cf">
+                                            <a href="#">Typescript</a>
+                                            <a href="#">前端安全</a>
+                                            <a href="#">项目实战</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>前端框架</dt>
+                                        <dd class="cf">
+                                            <a href="#">jQuery</a>
+                                            <a href="#">jQuery UI</a>
+                                            <a href="#">jQuery Mobile</a>
+                                            <a href="#">Ext JS</a>
+                                            <a href="#">AngularJS</a>
+                                            <a href="#">ReactJS</a>
+                                            <a href="#">Bootstrap</a>
+                                            <a href="#">React Native</a>
+                                            <a href="#">Backbone</a>
+                                            <a href="#">Three.js</a>
+                                            <a href="#">Mootools</a>
+                                            <a href="#">Compass</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>HTML5游戏</dt>
+                                        <dd class="cf">
+                                            <a href="#">Canvas</a>
+                                            <a href="#">SVG</a>
+                                            <a href="#">WebGL</a>
+                                            <a href="#">Cocos2d-js</a>
+                                            <a href="#">CreateJS</a>
+                                            <a href="#">Flash</a>
+                                            <a href="#">Unreal</a>
+                                            <a href="#">Egret</a>
+                                            <a href="#">Phaser</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="ahover">后端开发</a>
+                            <div class="list-show">
+                                <div>
+                                    <dl>
+                                        <dt><a href="#">Python</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Python 基础</a>
+                                            <a href="#">web2py</a>
+                                            <a href="#">Django</a>
+                                            <a href="#">Flask</a>
+                                            <a href="#">GUI</a>
+                                            <a href="#">数据挖掘与分析</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">PHP</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">PHP 基础</a>
+                                            <a href="#">YII</a>
+                                            <a href="#">ThinkPHP</a>
+                                            <a href="#">Laravel</a>
+                                            <a href="#">WordPress</a>
+                                            <a href="#">Phalcon</a>
+                                            <a href="#" cgid="135">Apache</a>
+                                            <a href="#" cgid="136">Facebook Hack</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">Node.js</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Node.js 基础</a>
+                                            <a href="#">express</a>
+                                            <a href="#">Meteor</a>
+                                            <a href="#">Hexo</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">ASP.NET</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">C#</a>
+                                            <a href="#">ASP.NET MVC</a>
+                                            <a href="#">Entity Framework</a>
+                                            <a href="#">WPF</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">J2EE</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">JSP</a>
+                                            <a href="#">Maven</a>
+                                            <a href="#">Spring</a>
+                                            <a href="#">SpringMVC</a>
+                                            <a href="#">Struts2</a>
+                                            <a href="#">MyBatis</a>
+                                            <a href="#">Hibernate</a>
+                                            <a href="#">Lucene</a>
+                                            <a href="#">常用框架</a>
+                                            <a href="#">项目实战</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">Ruby</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Ruby 基础</a>
+                                            <a href="#">Ruby on Rails</a>
+                                            <a href="#">Grape</a>
+                                            <a href="#">Ruby进阶</a>
+                                            <a href="#">RubyMine</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">Go</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Go 基础</a>
+                                            <a href="#">Revel</a>
+                                            <a href="#">beego</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">Erlang</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Erlang 基础</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="ahover">基础知识</a>
+                            <div class="list-show">
+                                <div>
+                                    <dl>
+                                        <dt><a href="#">基础语言</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">C</a>
+                                            <a href="#">C++</a>
+                                            <a href="#">Objective-C</a>
+                                            <a href="#">Swift</a>
+                                            <a href="#">C#</a>
+                                            <a href="#">Java</a>
+                                            <a href="#">Perl</a>
+                                            <a href="#">Shell</a>
+                                            <a href="#">Qt</a>
+                                            <a href="#">Scala</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">计算机基础</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">计算机组成原理</a>
+                                            <a href="#">网络工程</a>
+                                            <a href="#">Word</a>
+                                            <a href="#">Excel</a>
+                                            <a href="#">PowerPoint</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">开发基础</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">算法基础</a>
+                                            <a href="#">数据结构</a>
+                                            <a href="#">设计模式</a>
+                                            <a href="#">软件工程</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">开发工具</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Git/Github</a>
+                                            <a href="#">SVN</a>
+                                            <a href="#">VI</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">开放标准</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">OpenCL</a>
+                                            <a href="#">Open XML</a>
+                                            <a href="#">OpenGL/GLES</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="ahover">云计算&amp大数据</a>
+                            <div class="list-show">
+                                <div>
+                                    <dl>
+                                        <dt><a href="#">云计算</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">OpenStack</a>
+                                            <a href="#">Docker</a>
+                                            <a href="#">CloudStack</a>
+                                            <a href="#">Windows Azure</a>
+                                            <a href="#">IaaS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">大数据</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Hadoop</a>
+                                            <a href="#">Storm</a>
+                                            <a href="#">Hive</a>
+                                            <a href="#">Flume</a>
+                                            <a href="#">Kafka</a>
+                                            <a href="#">Zookeeper</a>
+                                            <a href="#">Hbase</a>
+                                            <a href="#">Spark</a>
+                                            <a href="#">信息检索</a>
+                                            <a href="#">数据分析</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">虚拟化</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">VMware</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">云平台</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">腾讯云</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="ahover">智能硬件&amp互联网</a>
+                            <div class="list-show">
+                                <div>
+                                    <dl>
+                                        <dt><a href="#">硬件架构</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">C51</a>
+                                            <a href="#">ARM</a>
+                                            <a href="#">Keil</a>
+                                            <a href="#">Cortex-M</a>
+                                            <a href="#">Cortex-A</a>
+                                            <a href="#">AVR</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">物联网操作系统</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">RTOS</a>
+                                            <a href="#">Android Wear</a>
+                                            <a href="#">Apple Watchkit</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">开源硬件平台</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Arduino</a>
+                                            <a href="#">树莓派</a>
+                                            <a href="#">mbed</a>
+                                            <a href="#">GoKit</a>
+                                            <a href="#">LeMaker Guitar</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">通信链接技术</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">无线WiFi</a>
+                                            <a href="#">移动通信</a>
+                                            <a href="#">蓝牙</a>
+                                            <a href="#">NFC</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">信息感知处理技术</a></dt>
+                                        <dd class="cf ">
+                                            <a href="#">传感器</a>
+                                            <a href="#">数据挖掘</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">人机交互技术</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">语音识别</a>
+                                            <a href="#">人脸识别</a>
+                                            <a href="#">手势识别</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="ahover">数据库</a>
+                            <div class="list-show ">
+                                <div>
+                                    <dl>
+                                        <dt><a href="#">SQL</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">MySQL</a>
+                                            <a href="#">SQL Server</a>
+                                            <a href="#">Oracle</a>
+                                            <a href="#">SQLite</a>
+                                            <a href="#">PostgreSQL</a>
+                                            <a href="#">DB2</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">NoSQL</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Cassandra</a>
+                                            <a href="#">Redis</a>
+                                            <a href="#">MongoDB</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="ahover">认证考试</a>
+                            <div class="list-show ">
+                                <div>
+                                    <dl>
+                                        <dt><a href="#">计算机等级考试</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">一级</a>
+                                            <a href="#">二级C</a>
+                                            <a href="#">二级Java</a>
+                                            <a href="#">二级C++</a>
+                                            <a href="#">网络工程师</a>
+                                            <a href="#">数据库工程师</a>
+                                            <a href="#">信息安全工程师</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">企业认证</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">思科认证</a>
+                                            <a href="#">Oracle认证</a>
+                                            <a href="#">Linux认证</a>
+                                            <a href="#">ARM认证</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="ahover">企业IT</a>
+                            <div class="list-show ">
+                                <div>
+                                    <dl>
+                                        <dt><a href="#">运维管理</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Shell</a>
+                                            <a href="#">自动化运维</a>
+                                            <a href="#">Nginx</a>
+                                            <a href="#">Apache</a>
+                                            <a href="#">运维监控</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">商业智能</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">FileMaker</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">操作系统</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Linux</a>
+                                            <a href="#">Windows</a>
+                                            <a href="#">Mac OS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">企业服务</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">B2C</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="ahover">设计&amp产品&amp测试</a>
+                            <div class="list-show ">
+                                <div>
+                                    <dl>
+                                        <dt><a href="#">设计基础</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">Photoshop</a>
+                                            <a href="#">Flash</a>
+                                            <a href="#">Illustrator</a>
+                                            <a href="#">Sketch</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">游戏设计</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">界面设计</a>
+                                            <a href="#">角色设计</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">产品经理</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">需求分析</a>
+                                            <a href="#">Axure</a>
+                                            <a href="#">项目实战</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">视觉设计</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">应用UI设计</a>
+                                            <a href="#">网页UI设计</a>
+                                            <a href="#">设计理论</a>
+                                            <a href="#">图形设计</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">测试工具</a></dt>
+                                        <dd class="cf">
+                                            <a href="#">自动化测试</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 课程库一级菜单 -->
+                <ul class="aside-hlist ">
+                    <li><a href="# "><i class="icon-zylj "></i>职业路径图</a></li>
+                    <li><a href="# "><i class="icon-zstx "></i>知识体系图</a></li>
+                    <li><a href="# "><i class="icon-xlkc "></i>系列课程</a></li>
+                    <li><a href="# "><i class="icon-kcbq "></i>课程标签</a></li>
+                </ul>
+                <!-- 课程库一级菜单end -->
+            </div>
+            <!-- 侧边栏区域end -->
+            <!-- 右边课程区域 -->
+            <div class="article ">
+                <!-- 课程列表的分类区域 -->
+                <div class="sort">
+                    <!-- 课程分类导航 -->
+                    <div class="sort-nav">
+                        <ul class="sort-list" id="sort-list">
+                            <li class="sort-type">
+                                <span>全部课程</span>
+                            </li>
+                            <li class="sort-type">
+                                <span>最新</span>
+                                <i class="arrow"></i>
+                                <ul class="sort-type-list">
+                                    <li><a href="#">最新</a></li>
+                                    <li><a href="#">最热</a></li>
+                                </ul>
+                            </li>
+                            <li class="sort-type">
+                                <span>课程类型</span>
+                                <i class="arrow"></i>
+                                <ul class="sort-type-list">
+                                    <li><a href="#">VIP</a></li>
+                                    <li><a href="#">免费</a></li>
+                                    <li><a href="#">认证专享</a></li>
+                                    <li><a href="#">全部</a></li>
+                                </ul>
+                            </li>
+                            <li class="sort-type">
+                                <span>内容类型</span>
+                                <i class="arrow"></i>
+                                <ul class="sort-type-list">
+                                    <li><a href="#">知识精讲</a></li>
+                                    <li><a href="#">项目实战</a></li>
+                                    <li><a href="#">全部</a></li>
+                                </ul>
+                            </li>
+                            <li class="sort-type">
+                                <span>难度等级</span>
+                                <i class="arrow"></i>
+                                <ul class="sort-type-list">
+                                    <li><a href="#">初级</a></li>
+                                    <li><a href="#">中级</a></li>
+                                    <li><a href="#">高级</a></li>
+                                    <li><a href="#">全部</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 课程分类导航 end-->
+                    <!-- 课程分类按钮 -->
+                    <div class="sort-btn">
+                        <a href="#" class="sort-card-on" title="卡片模式"></a>
+                        <a href="#" class="sort-list-on" title="列表模式"></a>
+                    </div>
+                    <!-- 课程分类按钮 end-->
+                </div>
+                <!-- 课程列表的分类区域end -->
+                <!-- 课程列表显示区域 -->
+                <div class="courses-wrap blist">
+                    <div class="course-wrap">
+                        <!-- 单课程库 -->
+                        <div class="course-info">
+                            <div class="cimg">
+                                <i class="collection-icon"></i>
+                                <a href="#" class="cmask">
+                                    <img src="img/lessonimg.jpg" width="250px">
+                                    <i class="player-icon"></i>
+                                </a>
+                            </div>
+                            <div class="c-info">
+                                <h3 class="chead"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h3>
+                                <p class="c-des">本课程通过实操演示，教大家快速完成SDK集成。</p>
+                                <div class="lf">
+                                    <p><i class="iconfont">&#xe629;</i>24小时</p>
+                                    <p><i class="iconfont">&#xe66b;</i>中级</p>
+                                </div>
+                                <div class="rf">
+                                    <p>12345学习</p>
+                                    <p><i class="iconfont">&#xe60d;</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-wrap">
+                        <!-- 单课程库 -->
+                        <div class="course-info">
+                            <div class="cimg">
+                                <i class="collection-icon"></i>
+                                <a href="#" class="cmask">
+                                    <img src="img/lessonimg.jpg" width="250px">
+                                    <i class="player-icon"></i>
+                                </a>
+                            </div>
+                            <div class="c-info">
+                                <h3 class="chead"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h3>
+                                <p class="c-des">本课程通过实操演示，教大家快速完成SDK集成。</p>
+                                <div class="lf">
+                                    <p><i class="iconfont">&#xe629;</i>24小时</p>
+                                    <p><i class="iconfont">&#xe66b;</i>中级</p>
+                                </div>
+                                <div class="rf">
+                                    <p>12345学习</p>
+                                    <p><i class="iconfont">&#xe60d;</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-wrap">
+                        <!-- 单课程库 -->
+                        <div class="course-info">
+                            <div class="cimg">
+                                <i class="collection-icon"></i>
+                                <a href="#" class="cmask">
+                                    <img src="img/lessonimg.jpg" width="250px">
+                                    <i class="player-icon"></i>
+                                </a>
+                            </div>
+                            <div class="c-info">
+                                <h3 class="chead"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h3>
+                                <p class="c-des">本课程通过实操演示，教大家快速完成SDK集成。</p>
+                                <div class="lf">
+                                    <p><i class="iconfont">&#xe629;</i>24小时</p>
+                                    <p><i class="iconfont">&#xe66b;</i>中级</p>
+                                </div>
+                                <div class="rf">
+                                    <p>12345学习</p>
+                                    <p><i class="iconfont">&#xe60d;</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-wrap">
+                        <!-- 单课程库 -->
+                        <div class="course-info">
+                            <div class="cimg">
+                                <i class="collection-icon"></i>
+                                <a href="#" class="cmask">
+                                    <img src="img/lessonimg.jpg" width="250px">
+                                    <i class="player-icon"></i>
+                                </a>
+                            </div>
+                            <div class="c-info">
+                                <h3 class="chead"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h3>
+                                <p class="c-des">本课程通过实操演示，教大家快速完成SDK集成。</p>
+                                <div class="lf">
+                                    <p><i class="iconfont">&#xe629;</i>24小时</p>
+                                    <p><i class="iconfont">&#xe66b;</i>中级</p>
+                                </div>
+                                <div class="rf">
+                                    <p>12345学习</p>
+                                    <p><i class="iconfont">&#xe60d;</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-wrap">
+                        <!-- 单课程库 -->
+                        <div class="course-info">
+                            <div class="cimg">
+                                <i class="collection-icon"></i>
+                                <a href="#" class="cmask">
+                                    <img src="img/lessonimg.jpg" width="250px">
+                                    <i class="player-icon"></i>
+                                </a>
+                            </div>
+                            <div class="c-info">
+                                <h3 class="chead"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h3>
+                                <p class="c-des">本课程通过实操演示，教大家快速完成SDK集成。</p>
+                                <div class="lf">
+                                    <p><i class="iconfont">&#xe629;</i>24小时</p>
+                                    <p><i class="iconfont">&#xe66b;</i>中级</p>
+                                </div>
+                                <div class="rf">
+                                    <p>12345学习</p>
+                                    <p><i class="iconfont">&#xe60d;</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-wrap">
+                        <!-- 单课程库 -->
+                        <div class="course-info">
+                            <div class="cimg">
+                                <i class="collection-icon"></i>
+                                <a href="#" class="cmask">
+                                    <img src="img/lessonimg.jpg" width="250px">
+                                    <i class="player-icon"></i>
+                                </a>
+                            </div>
+                            <div class="c-info">
+                                <h3 class="chead"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h3>
+                                <p class="c-des">本课程通过实操演示，教大家快速完成SDK集成。</p>
+                                <div class="lf">
+                                    <p><i class="iconfont">&#xe629;</i>24小时</p>
+                                    <p><i class="iconfont">&#xe66b;</i>中级</p>
+                                </div>
+                                <div class="rf">
+                                    <p>12345学习</p>
+                                    <p><i class="iconfont">&#xe60d;</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-wrap">
+                        <!-- 单课程库 -->
+                        <div class="course-info">
+                            <div class="cimg">
+                                <i class="collection-icon"></i>
+                                <a href="#" class="cmask">
+                                    <img src="img/lessonimg.jpg" width="250px">
+                                    <i class="player-icon"></i>
+                                </a>
+                            </div>
+                            <div class="c-info">
+                                <h3 class="chead"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h3>
+                                <p class="c-des">本课程通过实操演示，教大家快速完成SDK集成。</p>
+                                <div class="lf">
+                                    <p><i class="iconfont">&#xe629;</i>24小时</p>
+                                    <p><i class="iconfont">&#xe66b;</i>中级</p>
+                                </div>
+                                <div class="rf">
+                                    <p>12345学习</p>
+                                    <p><i class="iconfont">&#xe60d;</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 课程列表显示区域end -->
+                <div class="clear-float"></div>
+                <!-- 分页 -->
+                <div class="page-nav" id="page-nav">
+                    <ul class="pages">
+                        <li class="page-next">首页</li>
+                        <li class="page-next">上一页</li>
+                        <li class="page-number active">1</li>
+                        <li class="page-number">2</li>
+                        <li class="page-number">3</li>
+                        <li class="page-number">4</li>
+                        <li class="page-number">5</li>
+                        <li class="page-number">6</li>
+                        <li class="page-number">7</li>
+                        <li class="page-thpoint">...</li>
+                        <li class="page-next">下一页</li>
+                        <li class="page-next">末页</li>
+                        <li class="page-thpoint pagetotal">共95页</li>
+                        <li class="page-thpoint pagenow">
+                            当前
+                            <input type="text" value="1" id="gotoval"> 页
+                        </li>
+                        <li class="page-next go">确定</li>
+                    </ul>
+                </div>
+                <!-- 分页 -->
+            </div>
+            <!-- 右边课程区域end -->
+        </div>
+        <!-- 中间内容区域容器end -->
+        <!-- 底部区域 -->
+        <div class="footer">
+            <div class="jkinfor-block">
+                <div class="jkinfor">
+                    <div class="jk-logo">
+                        <img src="img/jk-logo-footer.png" />
+                        <p>极客学院，编程是一种信仰！</p>
+                    </div>
+                    <dl>
+                        <dt>职业学院</dt>
+                        <dd><a href="#" target="_blank">Web前端工程师</a></dd>
+                        <dd><a href="#" target="_blank">Python Web工程师</a></dd>
+                        <dd><a href="#" target="_blank">Go语言工程师</a></dd>
+                        <dd><a href="#" target="_blank">IOS工程师</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>会员课程</dt>
+                        <dd><a target="_blank" href="#">课程库</a></dd>
+                        <dd><a target="_blank" href="#">知识体系图</a></dd>
+                        <dd><a target="_blank" href="#">职业路径图</a></dd>
+                        <dd><a target="_blank" href="#">系列课程</a></dd>
+                        <dd><a target="_blank" href="#">课程标签</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>极客社区</dt>
+                        <dd><a target="_blank" href="#">技术问答</a></dd>
+                        <dd><a target="_blank" href="#">Wiki</a></dd>
+                        <dd><a target="_blank" href="#">资源下载</a></dd>
+                        <dd><a target="_blank" href="#">社群</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>其他</dt>
+                        <dd><a target="_blank" href="#">关于我们</a></dd>
+                        <dd><a target="_blank" href="#">使用指南</a></dd>
+                        <dd><a target="_blank" href="#">加入我们</a></dd>
+                        <dd><a target="_blank" href="#">联系我们</a></dd>
+                        <dd><a target="_blank" href="#">友情链接</a></dd>
+                    </dl>
+                    <div class="jk-down">
+                        <p class="hot-tel">服务热线:400-678-8266</p>
+                        <div class="downCon down-ios">
+                            <img src="img/app.png" class="twoCode" alt="下载二维码"> iPhone
+                        </div>
+                        <div class="downCon down-and">
+                            <img src="img/app.png" class="twoCode" alt="下载二维码"> Android
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1000 copyright">
+                    Copyright © 2013-2016&nbsp;<strong><a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a></strong> All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802020210
+                    <a href="#" target="_blank" class="down-wechat"></a>
+                    <a href="#" target="_blank" class="down-sina"></a>
+                </div>
+            </div>
+        </div>
+        <!-- 底部区域end -->
+    </div>
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/class.js"></script>
+</body>
+
+</html>
